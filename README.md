@@ -23,6 +23,23 @@ Based on our latest processing:
 - **Discarded (Low Confidence):** 29
 - **Dominant Group:** *Annelida* (specifically *Stylaria lacustris*)
 
+##  Ecological Diversity Analysis (Mlyn Station)
+
+Beyond simple identification, we performed a mathematical analysis of the ecosystem's health using diversity indices. These metrics account for both the number of species and how evenly individuals are distributed among them.
+
+### Biodiversity Metrics
+![Diversity Analysis](ecolog.ind.mlyn.png)
+
+| Metric | Value | Interpretation |
+| :--- | :--- | :--- |
+| **Species Richness** | [6] | Total number of unique species found |
+| **Shannon Index (H)** | [0.087] | Measures uncertainty; higher values mean higher stability |
+| **Simpson's Index (1-D)** | [0.031] | Probability that two random individuals belong to different species |
+
+### Scientific Conclusion
+A value of 0.087 is extremely low. This indicates that despite the presence of 6 different species, the community is heavily unbalanced. Almost all detected sequences belong to a single dominant taxon, while the other five species are present in negligible quantities. This suggests a "monoculture-like" state in this specific sample.
+The score of 0.031 means there is only a 3.1% chance that two random organisms from this sample will be different species. In ecological terms, the sample is 96.9% dominated by one specific group. This low resistance to dominance often points to a highly specialized environment or a recent local ecological event that allowed one species to flourish while suppressing others.
+Conclusion: Unlike the broader Pavlivka samples, the Mlyn station currently exhibits low taxonomic diversity and extreme dominance. With a Species Richness of only 6, the ecosystem here is significantly simplified. This data provides a crucial baseline for identifying why this specific location differs so drastically from the more balanced neighboring areas.
 ---
 
 ## 🛠 Methodology
