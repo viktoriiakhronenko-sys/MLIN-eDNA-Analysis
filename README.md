@@ -1,4 +1,4 @@
-# eDNA Biodiversity Analysis: Project "Mlyn" 🧬🌊
+# eDNA Biodiversity Analysis: Project "Mlyn" 
 
 This repository contains the environmental DNA (eDNA) analysis results for the **Mlyn** station (Pavlivka River). The study combines data from **MegaBLAST** and **BOLD Systems** to provide a high-resolution map of local biodiversity.
 
