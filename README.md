@@ -45,6 +45,59 @@ The score of 0.031 means there is only a 3.1% chance that two random organisms f
 Conclusion: Unlike the broader Pavlivka samples, the Mlyn station currently exhibits low taxonomic diversity and extreme dominance. With a Species Richness of only 6, the ecosystem here is significantly simplified. This data provides a crucial baseline for identifying why this specific location differs so drastically from the more balanced neighboring areas
 
 ---
+# 🧬 Molecular Verification and Phylogenetic Inference (Mlyn Station)
+
+This section provides a technical overview of the bioinformatic analysis and evolutionary relationships of the eDNA sequences recovered from the **Mlyn ecosystem**.
+
+## 1. Sequence Characteristics and Alignment
+The analysis focused on COI barcodes (671 bp) from 6 key taxonomic groups identified in the sample.
+
+* **Methodology:** Multiple Sequence Alignment (MSA) was performed using **Clustal Omega** to identify conserved regions and nucleotide substitutions.
+* **Findings:** The sequences showed high quality with a clear alignment across the target COI region, providing a robust basis for distance-based phylogenetic reconstruction.
+
+## 2. Phylogenetic Tree Reconstruction
+We utilized the **Neighbor-Joining (NJ)** method to visualize the evolutionary proximity of the detected species.
+
+* **Algorithm:** Neighbor-Joining.
+* **Evolutionary Model:** Kimura 2-parameter (K2P).
+* **Visualization:** ![Phylogenetic Tree Mlyn](Mlyn.png)
+
+* **Clustering Analysis (from `.tree` and `.nj` files):**
+    * **Oomycete Cluster:** *Pythium oopapillum* and *Pythium tardicrescens* formed a tight monophyletic group, reflecting their role as primary decomposers in the system.
+    * **Invertebrate Divergence:** *Stylaria lacustris* and the *Rotifer* environmental sample were grouped, though they showed significant genetic distance from the vertebrate and fungal-like clusters.
+    * **Specific Proximity:** In this analyzed 302 bp window, *Thymallus grubii* (Grayling) and *Ephydatia fluviatilis* (Sponge) showed shared conserved regions, a common occurrence in specific barcoding fragments across distant phyla.
+
+
+
+## 3. Percent Identity Matrix (PIM)
+The identity matrix (derived from `simple_phylogeny-I20260513-233250-0862-29790725-p1m.pim`) provides the exact percentage of shared nucleotides between sequences.
+
+| Taxon A | Taxon B | Similarity (%) | Scientific Interpretation |
+| :--- | :--- | :---: | :--- |
+| *Pythium oopapillum* | *Thymallus grubii* | **100.00%** | Sequence identity within the analyzed 302bp fragment. |
+| *Pythium oopapillum* | *Pythium tardicrescens* | **100.00%** | Highly conserved COI region for these oomycetes. |
+| *Stylaria lacustris* | *Ephydatia fluviatilis* | **76.10%** | Moderate affinity between freshwater invertebrates. |
+| *Rotifer* (Env Sample) | *Stylaria lacustris* | **46.03%** | Significant divergence within the microfauna. |
+| *Rotifer* (Env Sample) | *Thymallus grubii* | **37.75%** | Maximum evolutionary distance (Vertebrate vs. Rotifer). |
+
+## 4. Distance Calculation (Kimura-2-Parameter)
+Based on the `.nj` file, we analyzed the substitution rates (transitions vs. transversions):
+
+1.  **Genetic Identity (DIST = 0.0000):** Observed between the *Pythium* species and *Thymallus grubii* in this specific window, suggesting an extremely conserved sequence segment.
+2.  **Moderate Distance (DIST = 0.2917):** Found between *Stylaria* and *Ephydatia*, typical for distinct invertebrate phyla.
+3.  **High Divergence (DIST > 1.00):** The *Rotifer* sample showed a distance of **1.0510** from *Stylaria*, confirming it as a highly unique genetic lineage in the Mlyn sample.
+
+---
+
+### Data Availability
+The following raw outputs from the Galaxy pipeline are included in this repository:
+* `simple_phylogeny...tree`: Phylogenetic tree file.
+* `simple_phylogeny...pim`: Raw Percent Identity Matrix.
+* `simple_phylogeny...nj`: Evolutionary distance report.
+
+---
+*Mlyn eDNA Analysis Project - Molecular Biology & Bioinformatics Study, 2026.*
+---
 ## 🛠 Methodology
 1. **Bioinformatics Pipeline:** Sequences were processed via Galaxy Europe.
 2. **Taxonomic Assignment:** Dual-database approach using MegaBLAST (NCBI) and BOLD Systems.
