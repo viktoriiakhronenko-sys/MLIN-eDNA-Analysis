@@ -2,7 +2,7 @@
 
 This repository contains the environmental DNA (eDNA) analysis results for the **Mlyn** station (Pavlivka River). The study combines data from **MegaBLAST** and **BOLD Systems** to provide a high-resolution map of local biodiversity.
 
-## 📊 Research Results
+##  Research Results
 
 ### 1. General Taxonomic Structure
 The chart below shows the dominant Phyla identified at the Mlyn station. Data has been filtered to include only high-confidence matches (Identity ≥ 97%).
@@ -16,7 +16,7 @@ To maintain scientific accuracy, we separately visualized groups that constitute
 
 ---
 
-## 🔍 Data Quality Metrics (Mlyn Station)
+##  Data Quality Metrics (Mlyn Station)
 Based on our latest processing:
 - **Total Unique Sequences:** 7,924
 - **Reliable Identifications (≥97%):** 7,895
@@ -45,7 +45,7 @@ The score of 0.031 means there is only a 3.1% chance that two random organisms f
 Conclusion: Unlike the broader Pavlivka samples, the Mlyn station currently exhibits low taxonomic diversity and extreme dominance. With a Species Richness of only 6, the ecosystem here is significantly simplified. This data provides a crucial baseline for identifying why this specific location differs so drastically from the more balanced neighboring areas
 
 ---
-# 🧬 Molecular Verification and Phylogenetic Inference (Mlyn Station)
+#  Molecular Verification and Phylogenetic Inference (Mlyn Station)
 
 This section provides a technical overview of the bioinformatic analysis and evolutionary relationships of the eDNA sequences recovered from the **Mlyn ecosystem**.
 
@@ -98,12 +98,12 @@ The following raw outputs from the Galaxy pipeline are included in this reposito
 ---
 *Mlyn eDNA Analysis Project - Molecular Biology & Bioinformatics Study, 2026.*
 ---
-## 🛠 Methodology
+##  Methodology
 1. **Bioinformatics Pipeline:** Sequences were processed via Galaxy Europe.
 2. **Taxonomic Assignment:** Dual-database approach using MegaBLAST (NCBI) and BOLD Systems.
 3. **Visualization:** Custom Python scripts (Pandas, Matplotlib) with automated "Others" category grouping for clarity.
 ---
-## 📂 File Description
+##  File Description
 - `Final_Report_Mlyn.csv`: The master dataset with merged taxonomy and read counts.
 - `visualize_edna.py`: Python script for generating research-grade visualizations.
 - `main_composition.png` & `minority_details.png`: Generated visual reports.
