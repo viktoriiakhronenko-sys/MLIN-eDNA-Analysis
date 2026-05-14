@@ -55,5 +55,4 @@ Conclusion: Unlike the broader Pavlivka samples, the Mlyn station currently exhi
 - `visualize_edna.py`: Python script for generating research-grade visualizations.
 - `main_composition.png` & `minority_details.png`: Generated visual reports.
 
----
-*Analysis performed by Viktorija Khronenko, 2026.*
+
