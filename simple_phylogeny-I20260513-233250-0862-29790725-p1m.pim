@@ -1,0 +1,12 @@
+#
+#
+#  Percent Identity  Matrix - created by Clustal2.1 
+#
+#
+
+     1: Stylaria_lacustris_Reliable  100.00   76.10   73.40   73.40   73.40   46.03
+     2: Ephydatia_fluviatilis_Ref     76.10  100.00   72.60   72.60   72.60   39.74
+     3: Pythium_oopapillum_Mlyn       73.40   72.60  100.00  100.00  100.00   37.75
+     4: Thymallus_grubii_Fish         73.40   72.60  100.00  100.00  100.00   37.75
+     5: Pythium_tardicrescens_Mlyn    73.40   72.60  100.00  100.00  100.00   37.75
+     6: Rotifer_env_sample            46.03   39.74   37.75   37.75   37.75  100.00

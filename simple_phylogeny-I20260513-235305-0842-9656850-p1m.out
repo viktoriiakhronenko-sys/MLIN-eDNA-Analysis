@@ -1,0 +1,41 @@
+
+
+
+ CLUSTAL 2.1 Multiple Sequence Alignments
+
+
+Sequence format is Pearson
+Sequence 1: Stylaria_lacustris_Reliable      671 bp
+Sequence 2: Ephydatia_fluviatilis_Ref        671 bp
+Sequence 3: Pythium_oopapillum_Mlyn          671 bp
+Sequence 4: Thymallus_grubii_Fish            671 bp
+Sequence 5: Pythium_tardicrescens_Mlyn       671 bp
+Sequence 6: Rotifer_env_sample               671 bp
+
+           Stylaria_lacustris_Reliable 
+           Ephydatia_fluviatilis_Ref 
+           Pythium_oopapillum_Mlyn 
+           Thymallus_grubii_Fish 
+           Pythium_tardicrescens_Mlyn 
+           Rotifer_env_sample 
+           Ephydatia_fluviatilis_Ref 
+           Pythium_oopapillum_Mlyn 
+           Thymallus_grubii_Fish 
+           Pythium_tardicrescens_Mlyn 
+           Rotifer_env_sample 
+           Pythium_oopapillum_Mlyn 
+           Thymallus_grubii_Fish 
+           Pythium_tardicrescens_Mlyn 
+           Rotifer_env_sample 
+           Thymallus_grubii_Fish 
+           Pythium_tardicrescens_Mlyn 
+           Rotifer_env_sample 
+           Pythium_tardicrescens_Mlyn 
+           Rotifer_env_sample 
+           Rotifer_env_sample 
+perc identity file created:   [simple_phylogeny-I20260513-235305-0842-9656850-p1m.pim]
+
+Phylogenetic tree file created:   [simple_phylogeny-I20260513-235305-0842-9656850-p1m.nj]
+
+Phylogenetic tree file created:   [simple_phylogeny-I20260513-235305-0842-9656850-p1m.ph]
+
