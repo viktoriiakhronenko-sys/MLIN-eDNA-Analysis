@@ -4,12 +4,12 @@ This repository contains the environmental DNA (eDNA) analysis results for the *
 
 ##  Research Results
 
-### 1. General Taxonomic Structure
+### General Taxonomic Structure
 The chart below shows the dominant Phyla identified at the Mlyn station. Data has been filtered to include only high-confidence matches (Identity ≥ 97%).
 
 ![Main Composition](mlyn.pie_chart.png)
 
-### 2. Rare Biosphere Analysis
+### Rare Biosphere Analysis
 To maintain scientific accuracy, we separately visualized groups that constitute less than 2% of the total sample. These "minority" taxa often include important bioindicator species.
 
 ![Minority Groups](mlyn.bar_chart.minoryty.png)
@@ -49,13 +49,13 @@ Conclusion: Unlike the broader Pavlivka samples, the Mlyn station currently exhi
 
 This section provides a technical overview of the bioinformatic analysis and evolutionary relationships of the eDNA sequences recovered from the **Mlyn ecosystem**.
 
-## 1. Sequence Characteristics and Alignment
+## Sequence Characteristics and Alignment
 The analysis focused on COI barcodes (671 bp) from 6 key taxonomic groups identified in the sample.
 
 * **Methodology:** Multiple Sequence Alignment (MSA) was performed using **Clustal Omega** to identify conserved regions and nucleotide substitutions.
 * **Findings:** The sequences showed high quality with a clear alignment across the target COI region, providing a robust basis for distance-based phylogenetic reconstruction.
 
-## 2. Phylogenetic Tree Reconstruction
+## Phylogenetic Tree Reconstruction
 We utilized the **Neighbor-Joining (NJ)** method to visualize the evolutionary proximity of the detected species.
 
 * **Algorithm:** Neighbor-Joining.
@@ -69,7 +69,7 @@ We utilized the **Neighbor-Joining (NJ)** method to visualize the evolutionary p
 
 
 
-## 3. Percent Identity Matrix (PIM)
+## Percent Identity Matrix (PIM)
 The identity matrix (derived from `simple_phylogeny-I20260513-233250-0862-29790725-p1m.pim`) provides the exact percentage of shared nucleotides between sequences.
 
 | Taxon A | Taxon B | Similarity (%) | Scientific Interpretation |
@@ -80,7 +80,7 @@ The identity matrix (derived from `simple_phylogeny-I20260513-233250-0862-297907
 | *Rotifer* (Env Sample) | *Stylaria lacustris* | **46.03%** | Significant divergence within the microfauna. |
 | *Rotifer* (Env Sample) | *Thymallus grubii* | **37.75%** | Maximum evolutionary distance (Vertebrate vs. Rotifer). |
 
-## 4. Distance Calculation (Kimura-2-Parameter)
+## Distance Calculation (Kimura-2-Parameter)
 Based on the `.nj` file, we analyzed the substitution rates (transitions vs. transversions):
 
 1.  **Genetic Identity (DIST = 0.0000):** Observed between the *Pythium* species and *Thymallus grubii* in this specific window, suggesting an extremely conserved sequence segment.
@@ -94,9 +94,6 @@ The following raw outputs from the Galaxy pipeline are included in this reposito
 * `simple_phylogeny...tree`: Phylogenetic tree file.
 * `simple_phylogeny...pim`: Raw Percent Identity Matrix.
 * `simple_phylogeny...nj`: Evolutionary distance report.
-
----
-*Mlyn eDNA Analysis Project - Molecular Biology & Bioinformatics Study, 2026.*
 ---
 ##  Methodology
 1. **Bioinformatics Pipeline:** Sequences were processed via Galaxy Europe.
